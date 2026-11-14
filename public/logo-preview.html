@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>Logo Preview</title>
+<style>
+  body { background: #060d1a; font-family: 'Courier New', monospace; color: #64ffda; display: flex; flex-direction: column; align-items: center; padding: 40px 20px; }
+  h1 { font-size: 22px; margin-bottom: 8px; }
+  p { color: #8892b0; font-size: 14px; margin-bottom: 40px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; max-width: 900px; }
+  .card { background: #111827; border: 1px solid rgba(100,255,218,0.2); border-radius: 12px; padding: 28px; text-align: center; }
+  .card:hover { border-color: #64ffda; }
+  .card h3 { margin-top: 20px; font-size: 14px; color: #ccd6f6; }
+  .card p { font-size: 12px; color: #8892b0; margin-bottom: 0; }
+  img, svg { width: 100px; height: 100px; border-radius: 8px; }
+  .badge { display: inline-block; background: rgba(100,255,218,0.1); border: 1px solid rgba(100,255,218,0.3); color: #64ffda; font-size: 11px; padding: 3px 10px; border-radius: 20px; margin-top: 8px; }
+  .ai-badge { background: rgba(167,139,250,0.1); border-color: rgba(167,139,250,0.3); color: #a78bfa; }
+</style>
+</head>
+<body>
+  <h1>🎨 Portfolio Logo Options</h1>
+  <p>Pick the logo you like — tell me the number and I'll set it as your favicon!</p>
+
+  <div class="grid">
+    <!-- Option 1 -->
+    <div class="card">
+      <img src="/favicon-option1.svg" alt="Option 1"/>
+      <h3>Option 1 — Code Brackets</h3>
+      <p>Rounded rect, angle brackets, YN initials with dot accent</p>
+      <span class="badge">SVG · Crisp</span>
+    </div>
+
+    <!-- Option 2 -->
+    <div class="card">
+      <img src="/favicon-option2.svg" alt="Option 2"/>
+      <h3>Option 2 — Hexagon</h3>
+      <p>Double hexagon frame, YN monogram, tech/blockchain vibe</p>
+      <span class="badge">SVG · Crisp</span>
+    </div>
+
+    <!-- Option 3 -->
+    <div class="card">
+      <img src="/favicon-option3.svg" alt="Option 3"/>
+      <h3>Option 3 — Terminal</h3>
+      <p>Terminal prompt arrow, cursor blink, retro dev aesthetic</p>
+      <span class="badge">SVG · Crisp</span>
+    </div>
+
+    <!-- Option 4 -->
+    <div class="card">
+      <img src="/favicon-option4.svg" alt="Option 4"/>
+      <h3>Option 4 — Circle Badge</h3>
+      <p>Circular frame with arc accents, clean and modern</p>
+      <span class="badge">SVG · Crisp</span>
+    </div>
+
+    <!-- Option 5 — AI Generated -->
+    <div class="card">
+      <img src="/logo-ai-generated.jpg" alt="AI Generated"/>
+      <h3>Option 5 — AI Generated</h3>
+      <p>AI-rendered bracket monogram with richer visual depth</p>
+      <span class="badge ai-badge">✨ AI-Generated</span>
+    </div>
+  </div>
+</body>
+</html>
