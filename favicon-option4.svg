@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="50" fill="#0a0f1a"/>
+  
+  <!-- Outer ring -->
+  <circle cx="50" cy="50" r="46" fill="none" stroke="#64ffda" stroke-width="2" stroke-opacity="0.5"/>
+  
+  <!-- Arc accent top-right -->
+  <path d="M 73 20 A 36 36 0 0 1 86 50" stroke="#64ffda" stroke-width="4" stroke-linecap="round" fill="none"/>
+  
+  <!-- Arc accent bottom-left -->
+  <path d="M 27 80 A 36 36 0 0 1 14 50" stroke="#64ffda" stroke-width="4" stroke-linecap="round" fill="none"/>
+  
+  <!-- Y letter -->
+  <path d="M28 28 L40 44 L52 28" stroke="#64ffda" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <line x1="40" y1="44" x2="40" y2="62" stroke="#64ffda" stroke-width="4.5" stroke-linecap="round"/>
+  
+  <!-- N letter -->
+  <line x1="56" y1="62" x2="56" y2="28" stroke="#64ffda" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M56 28 L72 62" stroke="#64ffda" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="72" y1="28" x2="72" y2="62" stroke="#64ffda" stroke-width="4.5" stroke-linecap="round"/>
+</svg>
