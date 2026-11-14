@@ -18,6 +18,10 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const resumeHref = personalInfo.resumeLink?.startsWith("http")
+    ? personalInfo.resumeLink
+    : `${import.meta.env.BASE_URL}${personalInfo.resumeLink ? personalInfo.resumeLink.replace(/^\//, "") : "resume.pdf"}`;
+
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
@@ -65,7 +69,7 @@ const Navbar = () => {
             transition={{ delay: 0.8 }}
           >
             <a
-              href={personalInfo.resumeLink || `${import.meta.env.BASE_URL}resume.pdf`}
+              href={resumeHref}
               className="btn-outline nav-resume"
               target="_blank"
               rel="noreferrer"
@@ -119,7 +123,7 @@ const Navbar = () => {
               ))}
               <li>
                 <a
-                  href={personalInfo.resumeLink || `${import.meta.env.BASE_URL}resume.pdf`}
+                  href={resumeHref}
                   className="btn-outline"
                   target="_blank"
                   rel="noreferrer"

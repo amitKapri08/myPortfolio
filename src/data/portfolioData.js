@@ -140,7 +140,7 @@ export const experience = [
       "Developed and maintained 3+ client-facing web applications from scratch",
       "Integrated third-party APIs including Stripe and Google Maps",
       "Collaborated with designers to implement pixel-perfect UI components",
-      "Improved app performance score from 65 to 95 on Google Lighthouse",
+      // "Improved app performance score from 65 to 95 on Google Lighthouse",
     ],
     tech: [
       "React",
